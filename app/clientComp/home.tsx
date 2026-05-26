@@ -25,7 +25,7 @@ export const books: Book[] = [
     size: "2MB",
     category: "Développement personnel",
     audioUrl: "/audio/book1.mp3",
-    audioUrlSummarize: "/audio/book1.mp3",
+    audioUrlSummarize: "/audios/resume/La_mécanique_des_48_lois_du_pouvoir.mp3",
     hasAudio: true,
   },
   {
@@ -37,7 +37,8 @@ export const books: Book[] = [
     size: "2.3MB",
     category: "Développement personnel",
     audioUrl: "/audio/book2.mp3",
-    audioUrlSummarize: "/audio/book1.mp3",
+    audioUrlSummarize:
+      "/audios/resume/Le_génie_est_un_processus_biologique.mp3",
     hasAudio: true,
   },
   {
@@ -195,7 +196,7 @@ export const books: Book[] = [
       "Microsoft Office 365 [9 en 1] Le guide tout-en-un le plus actualisé, débutant à lexpert, pour maîtriser tout ce que vous…",
     author: "Joseph Barton",
     image: "/books/covers/office_360.png",
-    pagesNbr: "1317",
+    pagesNbr: "117",
     size: "2.3MB",
     category: "Informatique Burautique",
     audioUrl: "/audio/book4.mp3",
@@ -278,11 +279,11 @@ export default function HomePage() {
       {/* HERO SECTION */}
       <div className="pt-24 px-4 text-center">
         <h2 className="text-3xl font-extrabold text-gray-900 leading-tight">
-          Komanse investi nan tèt ou depi jodi a 🚀
+          Envesti nan tèt depi jodi a
         </h2>
 
         <p className="mt-3 text-gray-600 text-base">
-          Se garanti pwogrè ou demen.
+          Se garanti pwogrè w demen. 🚀
         </p>
         <div className="relative mt-5 bg-gradient-to-br from-white to-orange-50 p-6 rounded-3xl shadow-md border border-orange-100 overflow-hidden z-0">
           {/* Glow décoratif */}
@@ -295,7 +296,7 @@ export default function HomePage() {
 
           <div className="relative z-10">
             <p className="text-2xl font-extrabold text-gray-900">
-              🎁 Package 20 Liv Elektwonik
+              🎁 Package 20 Liv Elektwonik (PDF)
             </p>
 
             <div className="flex items-center gap-3 mt-4 flex-wrap">
@@ -316,7 +317,7 @@ export default function HomePage() {
             </p>
 
             <p className="text-sm text-gray-500 mt-3">
-              🚀 Lè lespri w grandi, opòtinite yo kòmanse suiv ou
+              Lè lespri w grandi, opòtinite yo kòmanse suiv ou
             </p>
           </div>
         </div>
@@ -404,7 +405,7 @@ export default function HomePage() {
       {/* MONCASH BUTTON */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-4 z-50">
         <a
-          href="https://wa.me/50947656226?text=Bonjou%20mwen%20enterese%20nan%20pak%2020%20liv%20elektwonik%20la%20a%201500G.%20Mwen%20ta%20renmen%20achte%20li."
+          href="https://wa.me/50940652035?text=Bonjou%20mwen%20enterese%20nan%20pak%2020%20liv%20elektwonik%20la%20a%201500G.%20Mwen%20ta%20renmen%20achte%20li."
           target="_blank"
           className="block text-center bg-green-600 hover:bg-green-700 transition text-white py-4 rounded-2xl font-bold text-lg shadow-lg"
         >
