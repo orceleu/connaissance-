@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 export type Book = {
@@ -31,7 +32,7 @@ export const books: Book[] = [
   {
     id: 2,
     title: "Atteindre l'excellence",
-    author: "Robert Green",
+    author: "Robert Greene",
     image: "/books/covers/atteindre_lexcellence.png",
     pagesNbr: "488",
     size: "2.3MB",
@@ -50,7 +51,8 @@ export const books: Book[] = [
     size: "0.47MB",
     category: "Spiritualité",
     audioUrl: "/audio/book3.mp3",
-    audioUrlSummarize: "/audio/book1.mp3",
+    audioUrlSummarize:
+      "/audios/resume/Les_rituels_de_Magalion_pour_réussir.mp3",
     hasAudio: true,
   },
   {
@@ -250,15 +252,63 @@ export const books: Book[] = [
     hasAudio: false,
   },
 ];
+
+const testimonials = [
+  { id: 1, image: "/testimonials/t1.png" },
+  { id: 2, image: "/testimonials/t2.png" },
+  { id: 3, image: "/testimonials/t3.png" },
+  { id: 4, image: "/testimonials/t4.png" },
+  { id: 5, image: "/testimonials/t5.png" },
+  { id: 6, image: "/testimonials/t6.png" },
+];
+
+/*
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {testimonials.map((t) => (
+          <div key={t.id} className="rounded-xl overflow-hidden shadow-md">
+            <img
+              src={t.image}
+              alt={`testimonial-${t.id}`}
+              className="w-full h-56 object-cover"
+            />
+          </div>
+        ))}
+      </div>
+
+*/
 const categories = [
-  "Développement personnel",
-  "Productivité",
-  "Spiritualité",
-  "Finance",
-  "Psychologie",
-  "Informatique Burautique",
-  "IA",
-  "Business",
+  {
+    name: "Développement personnel",
+    desc: "Si w vle konprann tèt ou epi avanse pi byen nan lavi.",
+  },
+  {
+    name: "Productivité",
+    desc: "Aprann kijan pou fè plis nan mwens tan san estrès.",
+  },
+  {
+    name: "Spiritualité",
+    desc: "Eksplore sans lavi ak koneksyon espirityèl ou.",
+  },
+  {
+    name: "Finance",
+    desc: "Jere lajan ou pi byen epi bati richès piti piti.",
+  },
+  {
+    name: "Psychologie",
+    desc: "Konprann fason moun panse ak konpòtman yo.",
+  },
+  {
+    name: "Informatique Burautique",
+    desc: "Metrize zouti òdinatè pou travay ak etid.",
+  },
+  {
+    name: "IA",
+    desc: "Dekouvri kijan entèlijans atifisyèl ap chanje mond lan,epi konn kijan pou esplwate potensyèl yo pou vin pi pwodiktif",
+  },
+  {
+    name: "Business",
+    desc: "Kreye epi devlope ide pou fè lajan ak biznis.",
+  },
 ];
 
 export default function HomePage() {
@@ -279,7 +329,7 @@ export default function HomePage() {
       {/* HERO SECTION */}
       <div className="pt-24 px-4 text-center">
         <h2 className="text-3xl font-extrabold text-gray-900 leading-tight">
-          Envesti nan tèt depi jodi a
+          Envesti nan tèt ou depi jodi a
         </h2>
 
         <p className="mt-3 text-gray-600 text-base">
@@ -326,18 +376,21 @@ export default function HomePage() {
       {/* CONTENT */}
       <div className="px-4 space-y-10 mt-8">
         {categories.map((cat) => (
-          <div key={cat}>
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-xl font-bold text-gray-800">{cat}</h2>
+          <div key={cat.name}>
+            <div className="flex items-center justify-between mb-1">
+              <h2 className="text-xl font-bold text-gray-800">{cat.name}</h2>
 
               <span className="text-sm text-gray-500">
-                {books.filter((book) => book.category === cat).length} livres
+                {books.filter((book) => book.category === cat.name).length}{" "}
+                livres
               </span>
             </div>
 
+            <p className="text-sm text-gray-500 mb-4">{cat.desc}</p>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
               {books
-                .filter((b) => b.category === cat)
+                .filter((b) => b.category === cat.name)
                 .map((book) => (
                   <div
                     key={book.id}
