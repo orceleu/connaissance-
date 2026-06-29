@@ -384,28 +384,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto my-10 px-4">
-        {/* Titre Komante */}
-        <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-          Komante.
-        </h2>
-
-        {/* Grille responsive */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {testimonials.map((t) => (
-            <div
-              key={t.id}
-              className="rounded-xl  flex justify-center items-center bg-gray-50 p-2"
-            >
-              <img
-                src={t.image}
-                alt={`testimonial-${t.id}`}
-                className="max-w-4xl h-16 "
-              />
-            </div>
-          ))}
-        </div>
-      </div>
 
       <div className="h-[2px] w-full bg-black my-4 md:my-8" />
       {/* CONTENT */}
