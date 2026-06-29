@@ -27,7 +27,7 @@ export const books: Book[] = [
     category: "Développement personnel",
     audioUrl: "/audio/book1.mp3",
     audioUrlSummarize: "/audios/resume/La_mécanique_des_48_lois_du_pouvoir.mp3",
-    hasAudio: true,
+    hasAudio: false,
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ export const books: Book[] = [
     audioUrl: "/audio/book2.mp3",
     audioUrlSummarize:
       "/audios/resume/Le_génie_est_un_processus_biologique.mp3",
-    hasAudio: true,
+    hasAudio: false,
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ export const books: Book[] = [
     audioUrl: "/audio/book3.mp3",
     audioUrlSummarize:
       "/audios/resume/Les_rituels_de_Magalion_pour_réussir.mp3",
-    hasAudio: true,
+    hasAudio: false,
   },
   {
     id: 4,
@@ -64,8 +64,8 @@ export const books: Book[] = [
     size: "2.1MB",
     category: "Spiritualité",
     audioUrl: "/audio/book4.mp3",
-    audioUrlSummarize: "/audio/book1.mp3",
-    hasAudio: true,
+    audioUrlSummarize: "/audios/resume/Dompter_son_ego_avec_la_Kabbale.mp3",
+    hasAudio: false,
   },
   {
     id: 5,
@@ -75,6 +75,10 @@ export const books: Book[] = [
     pagesNbr: "201",
     size: "2.3MB",
     category: "Spiritualité",
+    audioUrl: "/audio/book4.mp3",
+    audioUrlSummarize:
+      "/audios/resume/Devenez_l_architecte_de_votre_réalité.mp3",
+
     hasAudio: false,
   },
   {
@@ -85,6 +89,10 @@ export const books: Book[] = [
     pagesNbr: "201",
     size: "3.2MB",
     category: "Spiritualité",
+    audioUrl: "/audio/book4.mp3",
+    audioUrlSummarize:
+      "/audios/resume/Pactes_démoniaques_et_sang_de_chauve-souris.mp3",
+
     hasAudio: false,
   },
   {
@@ -96,6 +104,8 @@ export const books: Book[] = [
     pagesNbr: "172",
     size: "1.3MB",
     category: "Spiritualité",
+    audioUrl: "/audio/book4.mp3",
+    audioUrlSummarize: "/audio/book1.mp3",
     hasAudio: false,
   },
   {
@@ -106,11 +116,13 @@ export const books: Book[] = [
     pagesNbr: "220",
     size: "2.1MB",
     category: "Finance",
-    hasAudio: true,
+    audioUrl: "/audio/book4.mp3",
+    audioUrlSummarize: "/audio/book1.mp3",
+    hasAudio: false,
   },
   {
     id: 9,
-    title: "L'autoroute de Millionnaire",
+    title: "L'autoroute du Millionnaire",
     author: "MJ Demarco",
     image: "/books/covers/lautoroute_du_millionnaire.png",
     pagesNbr: "482",
@@ -118,7 +130,7 @@ export const books: Book[] = [
     category: "Finance",
     audioUrl: "/audio/book4.mp3",
     audioUrlSummarize: "/audio/book1.mp3",
-    hasAudio: true,
+    hasAudio: false,
   },
   {
     id: 10,
@@ -130,7 +142,7 @@ export const books: Book[] = [
     category: "Productivité",
     audioUrl: "/audio/book4.mp3",
     audioUrlSummarize: "/audio/book1.mp3",
-    hasAudio: true,
+    hasAudio: false,
   },
   {
     id: 11,
@@ -142,7 +154,7 @@ export const books: Book[] = [
     category: "Psychologie",
     audioUrl: "/audio/book4.mp3",
     audioUrlSummarize: "/audio/book1.mp3",
-    hasAudio: true,
+    hasAudio: false,
   },
   {
     id: 12,
@@ -154,7 +166,7 @@ export const books: Book[] = [
     category: "Psychologie",
     audioUrl: "/audio/book4.mp3",
     audioUrlSummarize: "/audio/book1.mp3",
-    hasAudio: true,
+    hasAudio: false,
   },
   {
     id: 13,
@@ -166,7 +178,7 @@ export const books: Book[] = [
     category: "Psychologie",
     audioUrl: "/audio/book4.mp3",
     audioUrlSummarize: "/audio/book1.mp3",
-    hasAudio: true,
+    hasAudio: false,
   },
   {
     id: 14,
@@ -254,12 +266,12 @@ export const books: Book[] = [
 ];
 
 const testimonials = [
-  { id: 1, image: "/testimonials/t1.png" },
-  { id: 2, image: "/testimonials/t2.png" },
-  { id: 3, image: "/testimonials/t3.png" },
-  { id: 4, image: "/testimonials/t4.png" },
-  { id: 5, image: "/testimonials/t5.png" },
-  { id: 6, image: "/testimonials/t6.png" },
+  { id: 1, image: "/comments/image.png" },
+  { id: 2, image: "/comments/image.png" },
+  { id: 3, image: "/comments/image.png" },
+  { id: 4, image: "/comments/image.png" },
+  { id: 5, image: "/comments/image.png" },
+  { id: 6, image: "/comments/image.png" },
 ];
 
 /*
@@ -350,20 +362,20 @@ export default function HomePage() {
             </p>
 
             <div className="flex items-center gap-3 mt-4 flex-wrap">
-              <span className="text-4xl font-black text-orange-600">1500G</span>
+              <span className="text-4xl font-black text-orange-600">3000G</span>
 
-              <span className="text-lg text-gray-400 line-through">5000G</span>
+              <span className="text-lg text-gray-400 line-through">10000G</span>
             </div>
 
             <div className="mt-3 inline-flex items-center gap-2 bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">
-              💸 Ou ekonomize 3500G
+              💸 Ou ekonomize 7000G
             </div>
 
             <p className="text-gray-600 mt-4 leading-relaxed">
-              Achte chak liv se <span className="font-semibold">250G</span>, men
+              Achte chak liv se <span className="font-semibold">500G</span>, men
               package espesyal sa ba ou
               <span className="font-bold text-orange-600"> 20 liv </span>
-              pou sèlman <span className="font-bold">1500G</span>.
+              pou sèlman <span className="font-bold">3000G</span>.
             </p>
 
             <p className="text-sm text-gray-500 mt-3">
@@ -372,9 +384,32 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <div className="max-w-6xl mx-auto my-10 px-4">
+        {/* Titre Komante */}
+        <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+          Komante.
+        </h2>
 
+        {/* Grille responsive */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {testimonials.map((t) => (
+            <div
+              key={t.id}
+              className="rounded-xl  flex justify-center items-center bg-gray-50 p-2"
+            >
+              <img
+                src={t.image}
+                alt={`testimonial-${t.id}`}
+                className="max-w-4xl h-16 "
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="h-[2px] w-full bg-black my-4 md:my-8" />
       {/* CONTENT */}
-      <div className="px-4 space-y-10 mt-8">
+      <div className="px-4 space-y-10 mt-16 md:mt-24">
         {categories.map((cat) => (
           <div key={cat.name}>
             <div className="flex items-center justify-between mb-1">
@@ -458,7 +493,7 @@ export default function HomePage() {
       {/* MONCASH BUTTON */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t p-4 z-50">
         <a
-          href="https://wa.me/50940652035?text=Bonjou%20mwen%20enterese%20nan%20pak%2020%20liv%20elektwonik%20la%20a%201500G.%20Mwen%20ta%20renmen%20achte%20li."
+          href="https://wa.me/50940652035?text=Bonjou%20mwen%20enterese%20nan%20pak%2020%20liv%20elektwonik%20la%20a%20.%20Mwen%20ta%20renmen%20achte%20li."
           target="_blank"
           className="block text-center bg-green-600 hover:bg-green-700 transition text-white py-4 rounded-2xl font-bold text-lg shadow-lg"
         >
